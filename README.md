@@ -13,13 +13,8 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-Finding the right product online at the cheapest price is always a challenge. While having a choice of multiple platforms to buy the same product is good, it takes a considerable amount for a user to search different e-commerce platforms and find the product at the right price.
-Each e-commerce platform has its own way of displaying the product and the data for the same product could vary in image or titles. This is where machine learning and data science can assist. This project is aimed at creating a hybrid search platform where the user can input the image or text or both as the input and our system would return the matched products from different online retail platforms. This will assist the user to get the product at the best price on the right platform.
-In the past decade it has become impossible to propose a search project without text retriever and because of its success there has been an increasing interest in image retrieval. To have the best solution, we combine two.
-Hybrid search is a searching technique that allow users to search for same product using a description, a picture, or the title of the object you're looking for. The flexibility of keyword-based retrieval search is combined with the capacity to query and reason on metadata that is characteristic of semantic search systems in Hybrid Search.
-A bundle of data that describes and provides information about other data is referred to as metadata. In addition to document retrieval, Hybrid Search may enable very effective knowledge retrieval by employing keywords as the "context" of the information, allowing the results to be further focused in ways that semantic search cannot.
-The modules described above including text processing, image processing and machine learning are created as python functions in jupyter notebooks. These functions take input as a text or an image of the product and return the matched products to the user.
-For simplicity, the dataset is used from Kaggle [1]. This dataset imitates the web scraping in real life where this data will be scraped from multiple e-commerce platforms. The front- end part of the project is developed in streamlit. Streamlit is an open-source framework for building machine learning and data science apps.
+Finding the right product online at the cheapest price is always a challenge. While having a choice of multiple platforms to buy the same product is good, it takes a considerable amount for a user to search different e-commerce platforms and find the product at the right price.In the past decade it has become impossible to propose a search project without text retriever and because of its success there has been an increasing interest in image retrieval. To have the best solution, we combine two.
+Hybrid search is a searching technique that allow users to search for same product using a description, a picture, or the title of the object you're looking for. The flexibility of keyword-based retrieval search is combined with the capacity to query and reason on metadata that is characteristic of semantic search systems in Hybrid Search.These functions take input as a text or an image of the product and return the matched products to the user.For simplicity, the dataset is used from Kaggle [1]. This dataset imitates the web scraping in real life where this data will be scraped from multiple e-commerce platforms. The front- end part of the project is developed in streamlit. Streamlit is an open-source framework for building machine learning and data science apps.
 
 #### Technologies
 
@@ -34,24 +29,23 @@ For simplicity, the dataset is used from Kaggle [1]. This dataset imitates the w
 
 ## How To Use
 
--Open kaggle_note book upload the data set [1]
--copy the  code from "text processing.ipynb",before running the code make sure to enter path of your working directory and directory of the images, then run the code
--Download the "submission.csv" on your desktop
--Download the train images.
--upload the "submission.csv" and train images file to your google drive
-- copy the  code from "kaggle_image.ipynb",before running the code make sure to enter path of your working directory and directory of the images, then run the code
-
+- Open kaggle_note book upload the data set [1]
+- copy the  code from "text processing.ipynb",before running the code make sure to enter path of your working directory and directory of the images, then run the code
+- Download the "submission.csv" on your desktop
+- Download the train images
+- upload the "submission.csv" and train images file to your google drive
+- copy the  code from "kaggle_image.ipynb" for image processing,before running the code make sure to enter path of your working directory and directory of the images, then run the code
+- Download "submit_eculidean.csv" from image processing
+- open submit_eculidean.csv add new column "price" since the orignal file does not comke with price column we'll have to manually add our self or you can download mine 
+- open jupyter lab ,copy the code from st.py just make sure to change working according to the path train images folder and submit_eculidean.csv
+- To run streamlit on  the jupyter lab go to administrator > run this " streamlit run python_script_file.py", just make sure that train images and submit_eculidean.csv   
 
 
 #### Installation
 
-pip install 
-
-#### API Reference
-
-```html
-    <p>dummy code</p>
-```
+1. pip install ( annoy,pandas,numpy,os,PIL,vectorhub-nightly) [Image_Processing]
+2. pip install ( pandas,os,numpy,TfidfVectorizer,tqdm,gc,torch,PIL,IPython.display) [Text_Processing]
+3. pip install (Streamlit,itertools,numpy,pandas,os) [front end]
 [Back To The Top](#read-me-template)
 
 ---
