@@ -1,7 +1,6 @@
 # Product_matching_using_hybrid_search_for_price_comparison
 
 ### Table of Contents
-You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
 - [How To Use](#how-to-use)
@@ -23,8 +22,6 @@ Hybrid search is a searching technique that allow users to search for same produ
 - Kaggle_note_book
 -Jupyter_Lab
 
-[Back To The Top](#read-me-template)
-
 ---
 
 ## How To Use
@@ -40,13 +37,11 @@ Hybrid search is a searching technique that allow users to search for same produ
 - open jupyter lab ,copy the code from st.py just make sure to change working according to the path train images folder and submit_eculidean.csv
 - To run streamlit on  the jupyter lab go to administrator > run this " streamlit run python_script_file.py", just make sure that train images and submit_eculidean.csv   
 
-
 #### Installation
 
 1. pip install ( annoy,pandas,numpy,os,PIL,vectorhub-nightly) [Image_Processing]
 2. pip install ( pandas,os,numpy,TfidfVectorizer,tqdm,gc,torch,PIL,IPython.display) [Text_Processing]
 3. pip install (Streamlit,itertools,numpy,pandas,os) [front end]
-[Back To The Top](#read-me-template)
 
 ---
 
@@ -78,8 +73,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-[Back To The Top](#read-me-template)
 
 ---
 
